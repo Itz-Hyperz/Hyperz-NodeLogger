@@ -43,6 +43,8 @@ client.on("ready", () => {
 });
 ```
 
+![](https://cdn.hyperz.dev/zqo6whvs.png)
+
 ---
 
 ## What are the dependencies?

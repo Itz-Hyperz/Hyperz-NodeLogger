@@ -63,7 +63,7 @@ class hdlogger {
 
                 let frick = body
     
-                let booter = carden(hcolor, frick, { margin: 1, content: { borderStyle: 'single', borderColor: borderColor, backgroundColor: backgroundColor, padding: 1}, header: { borderStyle: 'classic', padding: 1}})
+                let booter = carden(hcolor, frick, { margin: 1, content: { borderStyle: 'single', borderColor: borderColor, backgroundColor: backgroundColor, padding: 1}, header: { backgroundColor: backgroundColor, borderStyle: 'classic', padding: 1}})
                 console.log(booter);
             });
         }

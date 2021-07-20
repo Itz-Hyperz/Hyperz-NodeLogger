@@ -8,23 +8,65 @@ const chalk  = require('chalk')
 
 class hdlogger {
 
-    constructor(header, headerwidth, body, borderColor) {
-        this.header = header,
-        this.headerwidth = headerwidth,
-        this.body = body,
-        this.borderColor = borderColor
-    }
+    async hypelogger(header, headerwidth, headerColor, body, borderColor, backgroundColor) {
 
-    async hypelogger() {
+        if(backgroundColor === 'disabled') {
+            figlet.text(header, { width: `${headerwidth}`}, async function(err, head) {
+                if (err) return console.log(err);
+                
+                let hcolor;
+                if(headerColor === 'blue') {
+                    hcolor = chalk.blue(head)
+                } else if(headerColor === 'yellow') {
+                    hcolor = chalk.yellow(head)
+                } else if(headerColor === 'green') {
+                    hcolor = chalk.green(head)
+                } else if(headerColor === 'red') {
+                    hcolor = chalk.red(head)
+                } else if(headerColor === 'white') {
+                    hcolor = chalk.white(head)
+                } else if(headerColor === 'magenta') {
+                    hcolor = chalk.magenta(head)
+                } else if(headerColor === 'cyan') {
+                    hcolor = chalk.cyan(head)
+                } else {
+                    return console.log(`Please use a valid chalk color entry for your ${chalk.blue(headerColor)} entry.`);
+                }
 
-        figlet.text(`${this.header}`, { width: `${this.headerwidth}`}, async function(err, head) {
-            if (err) return console.log(err);
-            
-            let frick = this.body;
+                let frick = body
+    
+                let booter = carden(hcolor, frick, { margin: 1, content: { borderStyle: 'single', borderColor: borderColor, padding: 1}, header: { borderStyle: 'classic', padding: 1}})
+                console.log(booter);
+            });
+        } else {
+            figlet.text(hcolor, { width: `${headerwidth}`}, async function(err, head) {
+                if (err) return console.log(err);
+                
+                let hcolor;
+                if(headerColor === 'blue') {
+                    hcolor = chalk.blue(head)
+                } else if(headerColor === 'yellow') {
+                    hcolor = chalk.yellow(head)
+                } else if(headerColor === 'green') {
+                    hcolor = chalk.green(head)
+                } else if(headerColor === 'red') {
+                    hcolor = chalk.red(head)
+                } else if(headerColor === 'white') {
+                    hcolor = chalk.white(head)
+                } else if(headerColor === 'magenta') {
+                    hcolor = chalk.magenta(head)
+                } else if(headerColor === 'cyan') {
+                    hcolor = chalk.cyan(head)
+                } else {
+                    return console.log(`Please use a valid chalk color entry for your ${chalk.blue(headerColor)} entry.`);
+                }
 
-            let booter = carden(head, frick, { margin: 1, content: { borderStyle: 'single', borderColor: this.borderColor, padding: 1}, header: { borderStyle: 'classic', padding: 1}})
-            console.log(booter);
-        });
+                let frick = body
+    
+                let booter = carden(hcolor, frick, { margin: 1, content: { borderStyle: 'single', borderColor: borderColor, backgroundColor: backgroundColor, padding: 1}, header: { borderStyle: 'classic', padding: 1}})
+                console.log(booter);
+            });
+        }
 
     }
 

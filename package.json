@@ -1,0 +1,37 @@
+{
+  "name": "hyperz-nodelogger",
+  "version": "1.0.0",
+  "description": "A node logger desinged to replicate the boot file in most of my github repos",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Itz-Hyperz/Hyperz-NodeLogger.git"
+  },
+  "keywords": [
+    "Hyperz",
+    "Hyperz",
+    "Development",
+    "Hyperz",
+    "Node",
+    "Logger",
+    "Node",
+    "Logger",
+    "Node",
+    "Logger"
+  ],
+  "author": "Hyperz#0001",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Itz-Hyperz/Hyperz-NodeLogger/issues"
+  },
+  "homepage": "https://github.com/Itz-Hyperz/Hyperz-NodeLogger#readme",
+  "dependencies": {
+    "carden": "^4.0.0",
+    "chalk": "^2.4.2",
+    "figlet": "^1.5.0",
+    "node-fetch": "^2.6.1"
+  }
+}

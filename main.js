@@ -39,7 +39,7 @@ class hdlogger {
                 console.log(booter);
             });
         } else {
-            figlet.text(hcolor, { width: `${headerwidth}`}, async function(err, head) {
+            figlet.text(header, { width: `${headerwidth}`}, async function(err, head) {
                 if (err) return console.log(err);
                 
                 let hcolor;

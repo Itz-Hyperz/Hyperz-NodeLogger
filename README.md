@@ -29,17 +29,25 @@ The nodelogger function offers a fair amount of customization.
 
 - Entry 4 - The body section of the logger, doesn't support color yet. - **STRING**
 
-- Entry 5 - The border around the logger box, can be a color hex. - **STRING**
+- Entry 5 - The background color of the logger, can be a color HEX, or disable it by setting to "disabled" - **STRING**
 
-- Entry 6 - The background color of the logger, can be a color HEX, or disable it by setting to "disabled" - **STRING**
+- Entry 6 - The border around the logger box, can be a color hex. - **STRING**
 
+- Entry 7 - The [border style](##border-styles) around the logger module. - **STRING**
+
+- Entry 8 - Make the header border match the body border. - **BOOLEAN**
+
+---
+
+## Code Example
 
 ```js
 const nodelogger = require('hyperz-nodelogger')
 
 client.on("ready", () => {
     const logger = new nodelogger()
-    logger.hypelogger(`HDClient`, '500', 'green', `What a cool feature for a node module!\n\nPretty dank ngl`, 'green', 'disabled')
+    // Entries: header, headerWidth, headerColor, body, backgroundColor, borderColor, borderStyle, fullBorders
+    logger.hypelogger(`HDClient`, '500', 'green', `What a cool feature for a node module!\n\nPretty dank ngl`, 'disabled', 'green', 'single', false)
 });
 ```
 
@@ -54,5 +62,15 @@ client.on("ready", () => {
 [Carden](https://www.npmjs.com/package/carden/v/3.0.0)
 
 [Chalk](https://www.npmjs.com/package/chalk)
+
+---
+
+## Border Styles
+
+- single
+- classic
+- double
+- round
+- none
 
 ---

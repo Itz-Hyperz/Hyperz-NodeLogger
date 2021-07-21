@@ -21,21 +21,26 @@ A node logger using multiple external npm modules to allow you to build your own
 
 The nodelogger function offers a fair amount of customization.
 
-- Entry 1 - The header, this is the top of the embed. - **STRING**
+| Entry        | Type | Definition | 
+|----------------|---------------|---------------|
+| #1   | STRING  | The header, this is the top of the embed
+| #2   | STRING  | The width of the header
+| #3   | STRING  | The color of the ASCII text for the header (must work with npm chalk)
+| #4   | STRING  | The body section of the logger, doesn't support color yet
+| #5   | STRING  | The background color of the logger, can be a color HEX, or disable it by setting to "disabled"
+| #6   | STRING  | The border around the logger box, can be a color hex
+| #7   | STRING  | The [border style](##border-styles) around the logger module
+| #8   | BOOLEAN  | Make the header border match the body border
 
-- Entry 2 - The width of the header. - **STRING**
+---
 
-- Entry 3 - The color of the ASCII text for the header (must work with npm chalk). - **STRING**
+## Border Styles
 
-- Entry 4 - The body section of the logger, doesn't support color yet. - **STRING**
-
-- Entry 5 - The background color of the logger, can be a color HEX, or disable it by setting to "disabled" - **STRING**
-
-- Entry 6 - The border around the logger box, can be a color hex. - **STRING**
-
-- Entry 7 - The [border style](##border-styles) around the logger module. - **STRING**
-
-- Entry 8 - Make the header border match the body border. - **BOOLEAN**
+- single
+- classic
+- double
+- round
+- none
 
 ---
 
@@ -62,15 +67,5 @@ client.on("ready", () => {
 [Carden](https://www.npmjs.com/package/carden/v/3.0.0)
 
 [Chalk](https://www.npmjs.com/package/chalk)
-
----
-
-## Border Styles
-
-- single
-- classic
-- double
-- round
-- none
 
 ---

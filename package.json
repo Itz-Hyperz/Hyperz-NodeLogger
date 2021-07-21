@@ -1,6 +1,6 @@
 {
   "name": "hyperz-nodelogger",
-  "version": "1.0.0",
+  "version": "3.6.3",
   "description": "A node logger desinged to replicate the boot file in most of my github repos",
   "main": "main.js",
   "scripts": {
@@ -31,7 +31,6 @@
   "dependencies": {
     "carden": "^4.0.0",
     "chalk": "^2.4.2",
-    "figlet": "^1.5.0",
-    "node-fetch": "^2.6.1"
+    "figlet": "^1.5.0"
   }
 }

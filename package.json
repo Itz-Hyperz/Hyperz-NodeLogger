@@ -1,6 +1,6 @@
 {
   "name": "hyperz-nodelogger",
-  "version": "3.6.3",
+  "version": "3.7.1",
   "description": "A node logger desinged to replicate the boot file in most of my github repos",
   "main": "main.js",
   "scripts": {

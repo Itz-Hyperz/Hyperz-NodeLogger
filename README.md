@@ -15,6 +15,7 @@ A node logger using multiple external npm modules to allow you to build your own
 
 `npm i hyperz-nodelogger`
 
+[Read More](https://www.npmjs.com/package/hyperz-nodelogger)
 ---
 
 ## Using The Logger
@@ -69,3 +70,5 @@ client.on("ready", () => {
 [Chalk](https://www.npmjs.com/package/chalk)
 
 ---
+
+

@@ -43,9 +43,9 @@ class hdlogger {
                             } else if (headerColor === 'cyan') {
                                 hcolor = chalk.cyan(head)
                             } else if (headerColor === 'grey') {
-                                hcolor = chalk.cyan(head)
+                                hcolor = chalk.grey(head)
                             } else if (headerColor === 'black') {
-                                hcolor = chalk.cyan(head)
+                                hcolor = chalk.black(head)
                             } else {
                                 return console.log(`Please use a valid chalk color entry for your ${chalk.blue(headerColor)} entry.`);
                             }
@@ -75,9 +75,9 @@ class hdlogger {
                             } else if (headerColor === 'cyan') {
                                 hcolor = chalk.cyan(head)
                             } else if (headerColor === 'grey') {
-                                hcolor = chalk.cyan(head)
+                                hcolor = chalk.grey(head)
                             } else if (headerColor === 'black') {
-                                hcolor = chalk.cyan(head)
+                                hcolor = chalk.black(head)
                             } else {
                                 return console.log(`Please use a valid chalk color entry for your ${chalk.blue(headerColor)} entry.`);
                             }
@@ -109,9 +109,9 @@ class hdlogger {
                             } else if (headerColor === 'cyan') {
                                 hcolor = chalk.cyan(head)
                             } else if (headerColor === 'grey') {
-                                hcolor = chalk.cyan(head)
+                                hcolor = chalk.grey(head)
                             } else if (headerColor === 'black') {
-                                hcolor = chalk.cyan(head)
+                                hcolor = chalk.black(head)
                             } else {
                                 return console.log(`Please use a valid chalk color entry for your ${chalk.blue(headerColor)} entry.`);
                             }

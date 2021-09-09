@@ -29,7 +29,7 @@ The nodelogger function offers a fair amount of customization.
 | #4   | STRING  | The body section of the logger, doesn't support color yet
 | #5   | STRING  | The background color of the logger, can be a color HEX, or disable it by setting to "disabled"
 | #6   | STRING  | The border around the logger box, can be a color hex
-| #7   | STRING  | The [border style](##border-styles) around the logger module
+| #7   | STRING  | The [border style](#border-styles) around the logger module
 | #8   | BOOLEAN  | Make the header border match the body border
 
 ---

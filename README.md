@@ -5,15 +5,15 @@ A node logger using multiple external npm modules to allow you to build your own
 
 ## Support
 
-* [Discord](https://hyperz.dev/discord)
+* [Discord](https://hyperz.net/discord)
 
-* [Website](https://support.hyperz.dev/)
+* [Website](https://hyperz.net/)
 
 ---
 
 ## Installation
 
-`npm i hyperz-nodelogger`
+`npm i hyperz-nodelogger@latest`
 
 ---
 
@@ -67,5 +67,7 @@ client.on("ready", () => {
 [Carden](https://www.npmjs.com/package/carden/v/3.0.0)
 
 [Chalk](https://www.npmjs.com/package/chalk)
+
+[Axios](https://www.npmjs.com/package/axios)
 
 ---

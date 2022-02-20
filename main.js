@@ -4,6 +4,7 @@
 const figlet = require('figlet')
 const carden = require('carden')
 const chalk = require('chalk')
+const axios = require('axios')
 
 class hdlogger {
 
@@ -21,6 +22,17 @@ class hdlogger {
     async hypelogger(header, headerWidth, headerColor, body, backgroundColor, borderColor, borderStyle, fullBorders) {
 
             try {
+                
+                let currver = require('./package.json').version
+                let request = await axios({
+                    method: 'get',
+                    url: `https://raw.githubusercontent.com/Itz-Hyperz/version-pub-api/main/versions.json`,
+                    headers: {Accept: 'application/json, text/plain, */*','User-Agent': '*' }
+                });
+                let latestver = request.data.nodelogger
+                if(latestver != currver) {
+                    console.log(`${chalk.yellow(`[Hyperz-NodeLogger]`)} ${chalk.red(`You are not on the latest version.\nCurrent Version: ${currver}\nLatest Version: ${latestver}`)}\nPlease run ${chalk.yellow(`npm i hyperz-nodelogger@latest`)} to update.`)
+                }
 
                 if (backgroundColor === 'disabled') {
                     if (fullBorders) {
